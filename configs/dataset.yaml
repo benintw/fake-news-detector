@@ -1,0 +1,15 @@
+random_state: 42
+
+data_dir: "./data"
+true_csv: "./data/true.csv"
+false_csv: "./data/fake.csv"
+train_test_split: 0.01
+train_val_split: 0.2
+BATCH_SIZE: 8
+
+num_workers: 4
+pin_memory: True
+max_length: 512
+stride: 128
+
+model_name: "distilbert-base-uncased"

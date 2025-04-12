@@ -1,0 +1,55 @@
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+Train set: 31428 samples
+Validation set: 4490 samples
+Test set: 8980 samples
+Precomputing embeddings for faster training...
+ 10%|█████████████▋                                                                                                                          | 395/3929 [11:24<1:42:01,  1.73s/it]
+Traceback (most recent call last):
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/data/dataset.py", line 369, in <module>
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/data/dataset.py", line 351, in main
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/data/dataset.py", line 286, in prepare_datasets
+    train_df,
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/data/dataset.py", line 85, in __init__
+    print(f"Precomputed {len(self.embeddings)} embeddings")
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/data/dataset.py", line 173, in _compute_all_embeddings
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/transformers/models/bert/modeling_bert.py", line 1144, in forward
+    encoder_outputs = self.encoder(
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/transformers/models/bert/modeling_bert.py", line 695, in forward
+    layer_outputs = layer_module(
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/transformers/models/bert/modeling_bert.py", line 585, in forward
+    self_attention_outputs = self.attention(
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/transformers/models/bert/modeling_bert.py", line 515, in forward
+    self_outputs = self.self(
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    value_layer = self.transpose_for_scores(self.value(current_states))
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

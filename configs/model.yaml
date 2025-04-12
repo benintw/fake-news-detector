@@ -1,0 +1,8 @@
+embed_dim: 768
+hidden_dim: 256
+dropout: 0.3
+output_dim: 2
+
+class_mapping:
+  0: "real"
+  1: "fake"

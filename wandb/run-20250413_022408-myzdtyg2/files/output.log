@@ -1,0 +1,36 @@
+Epoch 1/2
+Training:   0%|                                        | 0/4445 [00:08<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/scripts/train.py", line 31, in <module>
+    main()
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/scripts/train.py", line 21, in main
+    history = trainer.train()
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/training/trainer.py", line 141, in train
+    train_loss, train_accuracy = self.train_epoch()
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/training/trainer.py", line 80, in train_epoch
+    for batch in batch_progress:
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 491, in __iter__
+    return self._get_iterator()
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 422, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1146, in __init__
+    w.start()
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/multiprocessing/context.py", line 288, in _Popen
+    return Popen(process_obj)
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/multiprocessing/popen_spawn_posix.py", line 62, in _launch
+    f.write(fp.getbuffer())
+KeyboardInterrupt

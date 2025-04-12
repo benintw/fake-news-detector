@@ -1,0 +1,16 @@
+Epoch 1/2
+Training: 100%|███████████████████████████████████████████████████████| 4445/4445 [00:22<00:00, 197.54it/s, loss=0.00196, acc=1]
+Evaluating: 100%|██████████████████████████████████████████████████████| 1112/1112 [00:10<00:00, 101.69it/s, loss=2.8e-6, acc=1]
+  Model saved to outputs/checkpoints/best_loss_model.pth
+  Model saved to outputs/checkpoints/best_accuracy_model.pth
+  Train Loss: 0.0822, Train Accuracy: 0.9720
+  Validation Loss: 0.0520, Validation Accuracy: 0.9807
+Epoch 2/2
+Training: 100%|███████████████████████████████████████████████████████| 4445/4445 [00:21<00:00, 210.24it/s, loss=0.00273, acc=1]
+Evaluating: 100%|█████████████████████████████████████████████████████| 1112/1112 [00:11<00:00, 100.77it/s, loss=2.32e-6, acc=1]
+  Model saved to outputs/checkpoints/best_loss_model.pth
+  Model saved to outputs/checkpoints/best_accuracy_model.pth
+  Train Loss: 0.0427, Train Accuracy: 0.9845
+  Validation Loss: 0.0420, Validation Accuracy: 0.9852
+  Model saved to outputs/checkpoints/final_model.pth
+Training complete. Results saved to outputs/results

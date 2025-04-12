@@ -1,0 +1,44 @@
+{
+  "os":  "macOS-14.5-arm64-arm-64bit",
+  "python":  "CPython 3.10.15",
+  "startedAt":  "2025-04-12T18:47:14.013765Z",
+  "args":  [
+    "--best"
+  ],
+  "program":  "-m scripts.evaluate",
+  "git":  {
+    "remote":  "https://github.com/benintw/FakeNewsDetector.git",
+    "commit":  "054406fbfe8cf04646392a7c05ab51faf60d0d59"
+  },
+  "email":  "chen.ben968@gmail.com",
+  "root":  "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector",
+  "host":  "Bens-Mac-Studio.local",
+  "executable":  "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/bin/python3",
+  "cpu_count":  12,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "994662584320",
+      "used":  "618668683264"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "994662584320",
+      "used":  "618668683264"
+    }
+  },
+  "memory":  {
+    "total":  "34359738368"
+  },
+  "cpu":  {
+    "count":  12,
+    "countLogical":  12
+  },
+  "apple":  {
+    "name":  "Apple M2 Max",
+    "ecpuCores":  4,
+    "pcpuCores":  8,
+    "gpuCores":  30,
+    "memoryGb":  32,
+    "ramTotalBytes":  "34359738368"
+  }
+}

@@ -1,0 +1,13 @@
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+Train set: 31428 samples
+Validation set: 4490 samples
+Test set: 8980 samples
+Precomputing embeddings for faster training...
+Computing embeddings: 100%|███████████████| 3929/3929 [1:54:39<00:00,  1.75s/it]
+Precomputed 31428 embeddings
+Precomputing embeddings for faster training...
+Computing embeddings: 100%|███████████████████| 562/562 [17:56<00:00,  1.92s/it]
+Precomputed 4490 embeddings
+Precomputing embeddings for faster training...
+Computing embeddings: 100%|█████████████████| 1123/1123 [50:20<00:00,  2.69s/it]
+Precomputed 8980 embeddings

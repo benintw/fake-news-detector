@@ -1,0 +1,16 @@
+Epoch 1/2
+Training:   0%|                                           | 0/5 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/scripts/train.py", line 31, in <module>
+    main()
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/scripts/train.py", line 21, in main
+    history = trainer.train()
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/training/trainer.py", line 140, in train
+    train_loss, train_accuracy = self.train_epoch()
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/training/trainer.py", line 80, in train_epoch
+    embeddings, labels = batch
+ValueError: not enough values to unpack (expected 2, got 1)

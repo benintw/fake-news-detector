@@ -1,0 +1,22 @@
+{"time":"2025-04-13T00:42:11.070124+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/wandb/run-20250413_004211-6d5vhddj/logs/debug-core.log"}
+{"time":"2025-04-13T00:42:11.437653+08:00","level":"INFO","msg":"created new stream","id":"6d5vhddj"}
+{"time":"2025-04-13T00:42:11.437697+08:00","level":"INFO","msg":"stream: started","id":"6d5vhddj"}
+{"time":"2025-04-13T00:42:11.437737+08:00","level":"INFO","msg":"handler: started","stream_id":"6d5vhddj"}
+{"time":"2025-04-13T00:42:11.437758+08:00","level":"INFO","msg":"sender: started","stream_id":"6d5vhddj"}
+{"time":"2025-04-13T00:42:11.437749+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"6d5vhddj"}
+{"time":"2025-04-13T00:42:11.76109+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-13T00:44:42.547257+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/chen-ben968-benchen/fake-news-detector/6d5vhddj/file_stream\": read tcp 192.168.0.17:62003->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-13T01:40:42.638993+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/chen-ben968-benchen/fake-news-detector/6d5vhddj/file_stream\": read tcp 192.168.0.17:55808->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-13T01:52:12.482666+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/chen-ben968-benchen/fake-news-detector/6d5vhddj/file_stream\": read tcp 192.168.0.17:57538->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-13T02:03:42.463315+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/chen-ben968-benchen/fake-news-detector/6d5vhddj/file_stream\": read tcp 192.168.0.17:58759->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-13T02:06:12.404745+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/chen-ben968-benchen/fake-news-detector/6d5vhddj/file_stream\": read tcp 192.168.0.17:59096->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-13T02:16:27.441164+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/chen-ben968-benchen/fake-news-detector/6d5vhddj/file_stream\": read tcp 192.168.0.17:61180->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-13T02:17:27.955165+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-13T02:17:27.955224+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-13T02:17:28.961754+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.528800625,"progress":"2.3KB/2.3KB"},{"desc":"uploading config.yaml","runtime_seconds":0.24362675,"progress":"631B/631B"}],"total_operations":2}}
+{"time":"2025-04-13T02:17:29.013727+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-13T02:17:29.290399+08:00","level":"INFO","msg":"stream: closing","id":"6d5vhddj"}
+{"time":"2025-04-13T02:17:29.290423+08:00","level":"INFO","msg":"handler: closed","stream_id":"6d5vhddj"}
+{"time":"2025-04-13T02:17:29.290439+08:00","level":"INFO","msg":"sender: closed","stream_id":"6d5vhddj"}
+{"time":"2025-04-13T02:17:29.290435+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6d5vhddj"}
+{"time":"2025-04-13T02:17:29.290523+08:00","level":"INFO","msg":"stream: closed","id":"6d5vhddj"}

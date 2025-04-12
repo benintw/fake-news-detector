@@ -1,0 +1,33 @@
+Loading model from outputs/checkpoints/best_accuracy_model.pth...
+Model loaded successfully from outputs/checkpoints/best_accuracy_model.pth
+Evaluating on validation set...
+Detailed Evaluation: 100%|██████████████████| 1112/1112 [00:11<00:00, 96.02it/s]
+Evaluation complete. Results saved to outputs/results/validation_results.json
+Generating embedding visualizations...
+Traceback (most recent call last):
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/scripts/evaluate.py", line 145, in <module>
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/scripts/evaluate.py", line 134, in main
+    save_dir = vis_dir / dataset_name
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/visualization/embedding_visualizer.py", line 176, in visualize_embeddings
+    plt, reduced = self.visualize_with_pca(
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/visualization/embedding_visualizer.py", line 49, in visualize_with_pca
+    reduced_embeddings = pca.fit_transform(embeddings)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/decomposition/_pca.py", line 468, in fit_transform
+    U, S, _, X, x_is_centered, xp = self._fit(X)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/decomposition/_pca.py", line 505, in _fit
+    X = validate_data(
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 2944, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 1070, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got scalar array instead:
+array=nan.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.

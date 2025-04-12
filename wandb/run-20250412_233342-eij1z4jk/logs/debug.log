@@ -1,0 +1,23 @@
+2025-04-12 23:33:42,637 INFO    MainThread:90413 [wandb_setup.py:_flush():67] Current SDK version is 0.19.9
+2025-04-12 23:33:42,637 INFO    MainThread:90413 [wandb_setup.py:_flush():67] Configure stats pid to 90413
+2025-04-12 23:33:42,637 INFO    MainThread:90413 [wandb_setup.py:_flush():67] Loading settings from /Users/benchen/.config/wandb/settings
+2025-04-12 23:33:42,638 INFO    MainThread:90413 [wandb_setup.py:_flush():67] Loading settings from /Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/wandb/settings
+2025-04-12 23:33:42,638 INFO    MainThread:90413 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-12 23:33:42,638 INFO    MainThread:90413 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/wandb/run-20250412_233342-eij1z4jk/logs/debug.log
+2025-04-12 23:33:42,638 INFO    MainThread:90413 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/wandb/run-20250412_233342-eij1z4jk/logs/debug-internal.log
+2025-04-12 23:33:42,638 INFO    MainThread:90413 [wandb_init.py:init():781] calling init triggers
+2025-04-12 23:33:42,638 INFO    MainThread:90413 [wandb_init.py:init():786] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-04-12 23:33:42,638 INFO    MainThread:90413 [wandb_init.py:init():809] starting backend
+2025-04-12 23:33:42,638 INFO    MainThread:90413 [wandb_init.py:init():813] sending inform_init request
+2025-04-12 23:33:42,669 INFO    MainThread:90413 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-04-12 23:33:42,669 INFO    MainThread:90413 [wandb_init.py:init():823] backend started and connected
+2025-04-12 23:33:42,672 INFO    MainThread:90413 [wandb_init.py:init():915] updated telemetry
+2025-04-12 23:33:42,700 INFO    MainThread:90413 [wandb_init.py:init():939] communicating run to backend with 90.0 second timeout
+2025-04-12 23:33:43,291 INFO    MainThread:90413 [wandb_init.py:init():1014] starting run threads in backend
+2025-04-12 23:33:43,358 INFO    MainThread:90413 [wandb_run.py:_console_start():2454] atexit reg
+2025-04-12 23:33:43,358 INFO    MainThread:90413 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-04-12 23:33:43,359 INFO    MainThread:90413 [wandb_run.py:_redirect():2371] Wrapping output streams.
+2025-04-12 23:33:43,359 INFO    MainThread:90413 [wandb_run.py:_redirect():2394] Redirects installed.
+2025-04-12 23:33:43,361 INFO    MainThread:90413 [wandb_init.py:init():1056] run started, returning control to user process
+2025-04-12 23:33:56,367 INFO    MsgRouterThr:90413 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.

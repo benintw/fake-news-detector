@@ -1,0 +1,15 @@
+{"time":"2025-04-13T02:24:08.536975+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/wandb/run-20250413_022408-myzdtyg2/logs/debug-core.log"}
+{"time":"2025-04-13T02:24:08.953792+08:00","level":"INFO","msg":"created new stream","id":"myzdtyg2"}
+{"time":"2025-04-13T02:24:08.953837+08:00","level":"INFO","msg":"stream: started","id":"myzdtyg2"}
+{"time":"2025-04-13T02:24:08.953844+08:00","level":"INFO","msg":"sender: started","stream_id":"myzdtyg2"}
+{"time":"2025-04-13T02:24:08.953857+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"myzdtyg2"}
+{"time":"2025-04-13T02:24:08.953839+08:00","level":"INFO","msg":"handler: started","stream_id":"myzdtyg2"}
+{"time":"2025-04-13T02:24:09.290265+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-13T02:24:18.659512+08:00","level":"INFO","msg":"stream: closing","id":"myzdtyg2"}
+{"time":"2025-04-13T02:24:18.659549+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-13T02:24:18.659589+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-13T02:24:19.59962+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-13T02:24:20.042144+08:00","level":"INFO","msg":"sender: closed","stream_id":"myzdtyg2"}
+{"time":"2025-04-13T02:24:20.042161+08:00","level":"INFO","msg":"handler: closed","stream_id":"myzdtyg2"}
+{"time":"2025-04-13T02:24:20.042139+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"myzdtyg2"}
+{"time":"2025-04-13T02:24:20.042827+08:00","level":"INFO","msg":"stream: closed","id":"myzdtyg2"}

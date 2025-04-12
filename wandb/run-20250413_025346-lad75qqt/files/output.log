@@ -1,0 +1,36 @@
+Loading model from outputs/checkpoints/best_accuracy_model.pth...
+Model loaded successfully from outputs/checkpoints/best_accuracy_model.pth
+Evaluating on validation set...
+Detailed Evaluation: 100%|██████████████████| 1112/1112 [00:11<00:00, 96.64it/s]
+Saving confusion matrix to outputs/plots/validation_confusion_matrix.png...
+Evaluation complete. Results saved to outputs/results/validation_results.json
+Generating embedding visualizations...
+Collecting embeddings for visualization...
+Traceback (most recent call last):
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/benchen/.pyenv/versions/3.10.15/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/scripts/evaluate.py", line 169, in <module>
+    main()
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/scripts/evaluate.py", line 158, in main
+    results = visualizer.visualize_embeddings(
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/visualization/embedding_visualizer.py", line 182, in visualize_embeddings
+    plt, reduced = self.visualize_with_tsne(
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/src/visualization/embedding_visualizer.py", line 113, in visualize_with_tsne
+    reduced_embeddings = tsne.fit_transform(embeddings)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/manifold/_t_sne.py", line 1178, in fit_transform
+    embedding = self._fit(X)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/manifold/_t_sne.py", line 1046, in _fit
+    return self._tsne(
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/manifold/_t_sne.py", line 1114, in _tsne
+    params, kl_divergence, it = _gradient_descent(obj_func, params, **opt_args)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/manifold/_t_sne.py", line 401, in _gradient_descent
+    error, grad = objective(p, *args, **kwargs)
+  File "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/manifold/_t_sne.py", line 282, in _kl_divergence_bh
+    error = _barnes_hut_tsne.gradient(
+KeyboardInterrupt

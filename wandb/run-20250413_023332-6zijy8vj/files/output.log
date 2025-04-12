@@ -1,0 +1,36 @@
+Evaluating on validation set...
+Detailed Evaluation: 100%|█████████████████████████████████████████████████████████████████| 1112/1112 [00:11<00:00, 100.09it/s]
+
+Evaluation Results:
+  Loss: 0.6942
+  Accuracy: 0.4847
+  Precision: 0.4855
+  Recall: 0.4847
+  F1 Score: 0.4850
+
+Classification Report:
+  real:
+    Precision: 0.4613
+    Recall: 0.4772
+    F1-Score: 0.4691
+    Support: 4241.0
+  fake:
+    Precision: 0.5076
+    Recall: 0.4915
+    F1-Score: 0.4994
+    Support: 4649.0
+  macro avg:
+    Precision: 0.4844
+    Recall: 0.4844
+    F1-Score: 0.4843
+    Support: 8890.0
+  weighted avg:
+    Precision: 0.4855
+    Recall: 0.4847
+    F1-Score: 0.4850
+    Support: 8890.0
+Evaluation complete. Results saved to outputs/results/validation_results.json
+Generating embedding visualizations...
+/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/lib/python3.10/site-packages/sklearn/manifold/_t_sne.py:1164: FutureWarning: 'n_iter' was renamed to 'max_iter' in version 1.5 and will be removed in 1.7.
+  warnings.warn(
+Visualizations saved to outputs/visualizations/validation

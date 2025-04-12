@@ -1,0 +1,84 @@
+Epoch 1/2
+Training: 100%|████████| 4445/4445 [00:21<00:00, 210.56it/s, loss=0.0116, acc=1]
+Evaluating: 100%|█████| 1112/1112 [00:10<00:00, 103.00it/s, loss=3.52e-6, acc=1]
+  Model saved to outputs/checkpoints/best_loss_model.pth
+  Model saved to outputs/checkpoints/best_accuracy_model.pth
+  Train Loss: 0.0830, Train Accuracy: 0.9722
+  Validation Loss: 0.0597, Validation Accuracy: 0.9788
+Epoch 2/2
+Training: 100%|███████| 4445/4445 [00:20<00:00, 214.69it/s, loss=0.00188, acc=1]
+Evaluating: 100%|█████| 1112/1112 [00:10<00:00, 103.89it/s, loss=4.77e-7, acc=1]
+  Model saved to outputs/checkpoints/best_loss_model.pth
+  Model saved to outputs/checkpoints/best_accuracy_model.pth
+  Train Loss: 0.0430, Train Accuracy: 0.9846
+  Validation Loss: 0.0319, Validation Accuracy: 0.9882
+  Model saved to outputs/checkpoints/final_model.pth
+
+Performing detailed evaluation on validation set...
+Loaded model from outputs/checkpoints/best_accuracy_model.pth
+Detailed Evaluation: 100%|█████████████████| 1112/1112 [00:10<00:00, 104.57it/s]
+
+Evaluation Results:
+  Loss: 0.0319
+  Accuracy: 0.9882
+  Precision: 0.9882
+  Recall: 0.9882
+  F1 Score: 0.9882
+
+Classification Report:
+  real:
+    Precision: 0.9850
+    Recall: 0.9903
+    F1-Score: 0.9877
+    Support: 4241.0
+  fake:
+    Precision: 0.9911
+    Recall: 0.9862
+    F1-Score: 0.9887
+    Support: 4649.0
+  macro avg:
+    Precision: 0.9881
+    Recall: 0.9883
+    F1-Score: 0.9882
+    Support: 8890.0
+  weighted avg:
+    Precision: 0.9882
+    Recall: 0.9882
+    F1-Score: 0.9882
+    Support: 8890.0
+
+Performing detailed evaluation on test set...
+
+Evaluating on test set...
+Loaded model from outputs/checkpoints/best_accuracy_model.pth
+Detailed Evaluation: 100%|██████████████████████| 57/57 [00:09<00:00,  6.09it/s]
+
+Evaluation Results:
+  Loss: 0.0426
+  Accuracy: 0.9844
+  Precision: 0.9844
+  Recall: 0.9844
+  F1 Score: 0.9844
+
+Classification Report:
+  real:
+    Precision: 0.9859
+    Recall: 0.9813
+    F1-Score: 0.9836
+    Support: 214.0
+  fake:
+    Precision: 0.9831
+    Recall: 0.9872
+    F1-Score: 0.9851
+    Support: 235.0
+  macro avg:
+    Precision: 0.9845
+    Recall: 0.9843
+    F1-Score: 0.9844
+    Support: 449.0
+  weighted avg:
+    Precision: 0.9844
+    Recall: 0.9844
+    F1-Score: 0.9844
+    Support: 449.0
+Training and evaluation complete. Results saved to outputs/results

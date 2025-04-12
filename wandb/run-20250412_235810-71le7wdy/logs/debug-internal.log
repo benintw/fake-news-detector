@@ -1,0 +1,16 @@
+{"time":"2025-04-12T23:58:10.817163+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/wandb/run-20250412_235810-71le7wdy/logs/debug-core.log"}
+{"time":"2025-04-12T23:58:11.175077+08:00","level":"INFO","msg":"created new stream","id":"71le7wdy"}
+{"time":"2025-04-12T23:58:11.175261+08:00","level":"INFO","msg":"stream: started","id":"71le7wdy"}
+{"time":"2025-04-12T23:58:11.175286+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"71le7wdy"}
+{"time":"2025-04-12T23:58:11.175301+08:00","level":"INFO","msg":"sender: started","stream_id":"71le7wdy"}
+{"time":"2025-04-12T23:58:11.175295+08:00","level":"INFO","msg":"handler: started","stream_id":"71le7wdy"}
+{"time":"2025-04-12T23:58:11.458175+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-13T00:09:12.115816+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/chen-ben968-benchen/fake-news-detector/71le7wdy/file_stream\": read tcp 192.168.0.17:58849->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-04-13T00:24:19.211024+08:00","level":"INFO","msg":"stream: closing","id":"71le7wdy"}
+{"time":"2025-04-13T00:24:19.211063+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-13T00:24:19.211102+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-13T00:24:20.032809+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-13T00:24:20.356425+08:00","level":"INFO","msg":"handler: closed","stream_id":"71le7wdy"}
+{"time":"2025-04-13T00:24:20.356441+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"71le7wdy"}
+{"time":"2025-04-13T00:24:20.356457+08:00","level":"INFO","msg":"sender: closed","stream_id":"71le7wdy"}
+{"time":"2025-04-13T00:24:20.356613+08:00","level":"INFO","msg":"stream: closed","id":"71le7wdy"}

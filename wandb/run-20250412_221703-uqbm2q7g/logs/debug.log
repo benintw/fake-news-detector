@@ -1,0 +1,7 @@
+2025-04-12 22:17:03,772 INFO    MainThread:83654 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/wandb/run-20250412_221703-uqbm2q7g/logs/debug.log
+2025-04-12 22:17:03,772 INFO    MainThread:83654 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/wandb/run-20250412_221703-uqbm2q7g/logs/debug-internal.log
+2025-04-12 22:17:03,773 INFO    MainThread:83654 [wandb_init.py:init():781] calling init triggers
+2025-04-12 22:17:03,773 INFO    MainThread:83654 [wandb_init.py:init():786] wandb.init called with sweep_config: {}
+config: {'total_samples': 44898, 'real_news_samples': 21417, 'fake_news_samples': 23481, 'model_name': 'bert-base-uncased', 'precompute_embeddings': True, '_wandb': {}}
+2025-04-12 22:17:03,773 INFO    MainThread:83654 [wandb_init.py:init():801] wandb.init() called while a run is active
+2025-04-13 01:20:03,995 INFO    MsgRouterThr:83654 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.

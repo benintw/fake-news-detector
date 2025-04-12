@@ -1,0 +1,14 @@
+{
+  "os":  "macOS-14.5-arm64-arm-64bit",
+  "python":  "CPython 3.10.15",
+  "startedAt":  "2025-04-12T18:23:12.588824Z",
+  "program":  "-m scripts.train",
+  "git":  {
+    "remote":  "https://github.com/benintw/FakeNewsDetector.git",
+    "commit":  "054406fbfe8cf04646392a7c05ab51faf60d0d59"
+  },
+  "email":  "chen.ben968@gmail.com",
+  "root":  "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector",
+  "host":  "Bens-Mac-Studio.local",
+  "executable":  "/Users/benchen/Desktop/1_CodingProjects/Resume_Projects/Fake_news_detector copy/fake_news_detector/.venv/bin/python3"
+}

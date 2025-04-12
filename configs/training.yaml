@@ -1,0 +1,19 @@
+# Training parameters
+EPOCHS: 2
+lr: 3.0e-4  # Reduced learning rate for better stability
+early_stopping_patience: 5
+
+# Output directories
+output_dir: "./outputs"
+checkpoints_dir: "./outputs/checkpoints"
+plots_dir: "./outputs/plots"
+
+# Weights & Biases configuration
+use_wandb: true
+wandb_project: "fake-news-detector"
+wandb_entity: "chen-ben968-benchen"  # Updated to match team name
+wandb_run_name: "distilbert-embeddings"
+
+# Evaluation parameters
+save_best_model: true
+eval_on_test: true

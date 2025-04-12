@@ -1,0 +1,34 @@
+Creating dataloaders with embeddings-first approach...
+Using device: cpu (forced CPU mode for stability)
+[38;5;247mic[39m[38;5;245m|[39m[38;5;245m [39m[38;5;247mdf[39m[38;5;245m.[39m[38;5;247mshape[39m[38;5;245m:[39m[38;5;245m [39m[38;5;245m([39m[38;5;36m44898[39m[38;5;245m,[39m[38;5;245m [39m[38;5;36m5[39m[38;5;245m)[39m
+Computing embeddings for all texts (this may take a while)...
+Computing embeddings: 100%|███████████████████████████████████████████████████████████████| 5613/5613 [1:34:46<00:00,  1.01s/it]
+[38;5;247mic[39m[38;5;245m|[39m[38;5;245m [39m[38;5;247mtorch[39m[38;5;245m.[39m[38;5;247mstack[39m[38;5;245m([39m[38;5;247mall_embeddings[39m[38;5;245m)[39m[38;5;245m.[39m[38;5;247mshape[39m[38;5;245m:[39m[38;5;245m [39m[38;5;247mtorch[39m[38;5;245m.[39m[38;5;247mSize[39m[38;5;245m([39m[38;5;245m[[39m[38;5;36m44898[39m[38;5;245m,[39m[38;5;245m [39m[38;5;36m768[39m[38;5;245m][39m[38;5;245m)[39m
+Saving processed dataframe to cache/df_with_embeddings_7ca690f74c.pkl...
+Train set: 35559 samples
+Validation set: 8890 samples
+Test set: 449 samples
+[38;5;247mic[39m[38;5;245m|[39m[38;5;245m [39m[38;5;247mtrain_df[39m[38;5;245m.[39m[38;5;247mshape[39m[38;5;245m:[39m[38;5;245m [39m[38;5;245m([39m[38;5;36m35559[39m[38;5;245m,[39m[38;5;245m [39m[38;5;36m6[39m[38;5;245m)[39m
+[38;5;245m    [39m[38;5;247mval_df[39m[38;5;245m.[39m[38;5;247mshape[39m[38;5;245m:[39m[38;5;245m [39m[38;5;245m([39m[38;5;36m8890[39m[38;5;245m,[39m[38;5;245m [39m[38;5;36m6[39m[38;5;245m)[39m
+[38;5;245m    [39m[38;5;247mtest_df[39m[38;5;245m.[39m[38;5;247mshape[39m[38;5;245m:[39m[38;5;245m [39m[38;5;245m([39m[38;5;36m449[39m[38;5;245m,[39m[38;5;245m [39m[38;5;36m6[39m[38;5;245m)[39m
+3
+4445
+1112
+57
+
+Train dataloader:
+  Embeddings shape: torch.Size([8, 768])
+  Labels shape: torch.Size([8])
+  Label distribution: 6.0/8 positive
+
+Val dataloader:
+  Embeddings shape: torch.Size([8, 768])
+  Labels shape: torch.Size([8])
+  Label distribution: 4.0/8 positive
+
+Test dataloader:
+  Embeddings shape: torch.Size([8, 768])
+  Labels shape: torch.Size([8])
+  Label distribution: 5.0/8 positive
+
+Dataloaders created successfully!

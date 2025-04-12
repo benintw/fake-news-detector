@@ -1,0 +1,32 @@
+Evaluating on validation set...
+Detailed Evaluation: 100%|█████████████████████████████████████████████████████████████████| 1112/1112 [00:10<00:00, 102.71it/s]
+
+Evaluation Results:
+  Loss: 0.6915
+  Accuracy: 0.5245
+  Precision: 0.5185
+  Recall: 0.5245
+  F1 Score: 0.4164
+
+Classification Report:
+  real:
+    Precision: 0.5107
+    Recall: 0.0785
+    F1-Score: 0.1361
+    Support: 4241.0
+  fake:
+    Precision: 0.5256
+    Recall: 0.9314
+    F1-Score: 0.6720
+    Support: 4649.0
+  macro avg:
+    Precision: 0.5182
+    Recall: 0.5050
+    F1-Score: 0.4041
+    Support: 8890.0
+  weighted avg:
+    Precision: 0.5185
+    Recall: 0.5245
+    F1-Score: 0.4164
+    Support: 8890.0
+Evaluation complete. Results saved to outputs/results/validation_results.json
