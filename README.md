@@ -1,5 +1,24 @@
 # Fake News Detector
 
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Data Processing Pipeline: The Core Challenge](#data-processing-pipeline-the-core-challenge)
+  - [1. Efficient Embedding Computation](#1-efficient-embedding-computation)
+  - [2. Intelligent Caching Mechanism](#2-intelligent-caching-mechanism)
+  - [3. Memory-Efficient Data Representation](#3-memory-efficient-data-representation)
+  - [4. Flexible Data Splitting](#4-flexible-data-splitting)
+- [Technical Implementation](#technical-implementation)
+- [Experiment Tracking](#experiment-tracking)
+- [Recent Updates (April 2025)](#recent-updates-april-2025)
+- [Future Improvements](#future-improvements)
+- [Scripts and Usage](#scripts-and-usage)
+  - [1. Training Script](#1-training-script-scriptstrainpy)
+  - [2. Evaluation Script](#2-evaluation-script-scriptsevaluatepy)
+  - [3. Prediction Script](#3-prediction-script-scriptspredictpy)
+- [Setup](#setup)
+- [Configuration](#configuration)
+- [Project Structure](#project-structure)
+
 ## Project Overview
 This project implements a machine learning system for detecting fake news articles. While the model architecture itself is relatively straightforward, the real innovation lies in the sophisticated data processing pipeline that efficiently handles large text datasets and optimizes the computation of text embeddings.
 
