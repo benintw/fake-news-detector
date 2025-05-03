@@ -1,8 +1,8 @@
-import argparse
 import json
-import os
 
+import click
 from colorama import Fore, Style, init
+
 from src.inference.predictor import NewsPredictor
 from src.utils.config import load_configs
 
@@ -10,77 +10,60 @@ from src.utils.config import load_configs
 init()
 
 
-def main():
-    # Parse command line arguments
-    parser = argparse.ArgumentParser(
-        description="Predict if news articles are real or fake"
-    )
-    parser.add_argument(
-        "--text",
-        type=str,
-        default=None,
-        help="Text of a news article to classify",
-    )
-    parser.add_argument(
-        "--file",
-        type=str,
-        default="./sample_news.txt",
-        help="Path to a file with news articles to classify",
-    )
-    parser.add_argument(
-        "--model_path",
-        type=str,
-        default="./outputs/checkpoints/best_accuracy_model.pth",
-        help="Path to model checkpoint to use",
-    )
-    parser.add_argument(
-        "--output",
-        type=str,
-        default="predictions.json",
-        help="Path to save prediction results",
-    )
-    parser.add_argument(
-        "--verbose",
-        action="store_true",
-        help="Show detailed prediction information",
-    )
-    args = parser.parse_args()
-
+@click.command()
+@click.option("--text", default=None, help="Text of a news article to classify")
+@click.option(
+    "--file",
+    "file_path",
+    default="./sample_news.txt",
+    help="Path to a file with news articles to classify",
+)
+@click.option(
+    "--model-path",
+    default="./outputs/checkpoints/best_accuracy_model.pth",
+    help="Path to model checkpoint to use",
+)
+@click.option(
+    "--output", default="predictions.json", help="Path to save prediction results"
+)
+@click.option("--verbose", is_flag=True, help="Show detailed prediction information")
+def main(text: str, file_path: str, model_path: str, output: str, verbose: bool):
+    """Predict if news articles are real or fake."""
     # Load configurations
     config = load_configs(
         ["configs/model.yaml", "configs/training.yaml", "configs/dataset.yaml"]
     )
 
     # Initialize predictor
-    predictor = NewsPredictor(config, model_path=args.model_path)
+    predictor = NewsPredictor(config, model_path=model_path)
 
     # Make predictions
-    if args.text:
+    if text:
         # Predict single text
-        results = predictor.predict_text(args.text)
-        _display_prediction_results([results], args.verbose)
-    elif args.file:
+        results = predictor.predict_text(text)
+        _display_prediction_results([results], verbose)
+    elif file_path:
         # Predict from file
         try:
-            results = predictor.predict_file(args.file)
+            results = predictor.predict_file(file_path)
             print(
-                f"\nAnalyzed {len(results)} article{'s' if len(results) > 1 else ''} from {args.file}"
+                f"\nAnalyzed {len(results)} article{'s' if len(results) > 1 else ''} from {file_path}"
             )
-            _display_prediction_results(results, args.verbose)
+            _display_prediction_results(results, verbose)
         except FileNotFoundError:
-            print(f"Error: File '{args.file}' not found.")
+            print(f"Error: File '{file_path}' not found.")
             return
         except Exception as e:
             print(f"Error processing file: {e}")
             return
     else:
-        parser.error("Either --text or --file must be provided")
+        raise click.UsageError("Either --text or --file must be provided")
 
     # Save results
-    with open(args.output, "w") as f:
+    with open(output, "w") as f:
         json.dump(results, f, indent=4)
 
-    print(f"\nPredictions saved to {args.output}")
+    print(f"\nPredictions saved to {output}")
 
 
 def _display_prediction_results(results, verbose=False):

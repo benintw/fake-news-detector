@@ -1,5 +1,5 @@
 # Training parameters
-EPOCHS: 2
+EPOCHS: 20
 lr: 3.0e-4  # Reduced learning rate for better stability
 early_stopping_patience: 5
 

@@ -5,3 +5,6 @@ outputs/checkpoints/*
 *.csv
 *.DS_Store
 image.png
+wandb/
+
+todo.md

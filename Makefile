@@ -19,5 +19,5 @@ validate:
 
 predict:
 	@echo "Predicting..."
-	@uv run python -m scripts.predict --text "./sample_news.txt"
+	@uv run python -m scripts.predict --file "./sample_news.txt"
 	@echo "Prediction complete!"

@@ -293,3 +293,14 @@ fake_news_detector/
     ├── training/             # Training modules
     └── utils/                # Utility functions
 ```
+
+
+
+ADD:
+- docker
+  - docker-compose
+  - dockerfile
+  - docker-compose.yml
+
+- FastAPI app
+ - deploy on streamlit

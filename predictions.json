@@ -2,53 +2,53 @@
     {
         "prediction": "real",
         "probabilities": {
-            "real": 0.9994008541107178,
-            "fake": 0.0005990868667140603
+            "real": 0.9997896552085876,
+            "fake": 0.00021031736105214804
         },
-        "confidence": 0.9994008541107178,
+        "confidence": 0.9997896552085876,
         "certainty": "Very High",
         "text_length": 4713,
         "text_preview": "Smartphones and computers are now exempt from Trump\u2019s latest tariffs\n\n\nCNN\n\nElectronics imported to ...",
-        "timestamp": 1744485093.1028302,
+        "timestamp": 1746260986.388706,
         "file_source": "./sample_news.txt"
     },
     {
         "prediction": "real",
         "probabilities": {
-            "real": 0.9539623856544495,
-            "fake": 0.04603762552142143
+            "real": 0.991184413433075,
+            "fake": 0.008815581910312176
         },
-        "confidence": 0.9539623856544495,
+        "confidence": 0.991184413433075,
         "certainty": "Very High",
         "text_length": 8666,
         "text_preview": "Will the U.S.-China tariff war drive up online shopping prices for Canadians?\n\nClicking \"add to cart...",
-        "timestamp": 1744485093.1028311,
+        "timestamp": 1746260986.3887072,
         "file_source": "./sample_news.txt"
     },
     {
         "prediction": "fake",
         "probabilities": {
-            "real": 0.014364738017320633,
-            "fake": 0.9856352806091309
+            "real": 0.00965375266969204,
+            "fake": 0.9903462529182434
         },
-        "confidence": 0.9856352806091309,
+        "confidence": 0.9903462529182434,
         "certainty": "Very High",
         "text_length": 3444,
         "text_preview": "'Google AI presented my April Fools' story as real news'\n\nEvery year, journalist Ben Black publishes...",
-        "timestamp": 1744485093.1028311,
+        "timestamp": 1746260986.3887072,
         "file_source": "./sample_news.txt"
     },
     {
         "prediction": "fake",
         "probabilities": {
-            "real": 0.25690239667892456,
-            "fake": 0.7430976033210754
+            "real": 0.3907770812511444,
+            "fake": 0.609222948551178
         },
-        "confidence": 0.7430976033210754,
-        "certainty": "Moderate",
+        "confidence": 0.609222948551178,
+        "certainty": "Low",
         "text_length": 3470,
         "text_preview": "Woman sentenced in case that sparked Springfield cat-eating rumours\n4 December 2024\n\nShare\n\nSave\nMik...",
-        "timestamp": 1744485093.1028311,
+        "timestamp": 1746260986.3887072,
         "file_source": "./sample_news.txt"
     }
 ]

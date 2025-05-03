@@ -1,44 +1,36 @@
-import argparse
 import json
-import os
 from pathlib import Path
 
+import click
 import torch
+
 from src.training.trainer import Trainer
 from src.utils.config import load_configs
 from src.visualization.embedding_visualizer import EmbeddingVisualizer
 
 
-def main():
+@click.command()
+@click.option(
+    "--model_path", type=str, default=None, help="Path to model checkpoint to evaluate"
+)
+@click.option("--best", action="store_true", help="Use best model based on accuracy")
+@click.option(
+    "--test", action="store_true", help="Evaluate on test set instead of validation set"
+)
+@click.option(
+    "--visualize",
+    action="store_true",
+    default=True,
+    help="Generate embedding visualizations",
+)
+@click.option(
+    "--vis_methods",
+    type=str,
+    default="pca,tsne",
+    help="Visualization methods to use (comma-separated)",
+)
+def main(model_path: str, best: bool, test: bool, visualize: bool, vis_methods: str):
     # Parse command line arguments
-    parser = argparse.ArgumentParser(description="Evaluate fake news detection model")
-    parser.add_argument(
-        "--model_path",
-        type=str,
-        default=None,
-        help="Path to model checkpoint to evaluate",
-    )
-    parser.add_argument(
-        "--best", action="store_true", help="Use best model based on accuracy"
-    )
-    parser.add_argument(
-        "--test",
-        action="store_true",
-        help="Evaluate on test set instead of validation set",
-    )
-    parser.add_argument(
-        "--visualize",
-        action="store_true",
-        default=True,
-        help="Generate embedding visualizations",
-    )
-    parser.add_argument(
-        "--vis_methods",
-        type=str,
-        default="pca,tsne",
-        help="Visualization methods to use (comma-separated)",
-    )
-    args = parser.parse_args()
 
     # Load configurations
     config = load_configs(
@@ -54,8 +46,8 @@ def main():
     trainer = Trainer(config)
 
     # Load best model if specified
-    if args.best or args.model_path:
-        model_path = args.model_path or str(
+    if best or model_path:
+        model_path = model_path or str(
             Path(config.get("checkpoints_dir", "./outputs/checkpoints"))
             / "best_accuracy_model.pth"
         )
@@ -68,7 +60,7 @@ def main():
             print(f"Warning: Model file {model_path} not found. Using default model.")
 
     # Evaluate model
-    if args.test:
+    if test:
         # Evaluate on test set
         print("Evaluating on test set...")
         results = trainer.evaluator.detailed_evaluation(trainer.test_dataloader)
@@ -114,7 +106,7 @@ def main():
     print(f"Evaluation complete. Results saved to {output_file}")
 
     # Generate embedding visualizations if requested
-    if args.visualize:
+    if visualize:
         print("Generating embedding visualizations...")
 
         # Create visualizations directory
@@ -124,12 +116,12 @@ def main():
         # Collect embeddings and labels for visualization
         print("Collecting embeddings for visualization...")
         trainer._collect_embeddings(
-            trainer.test_dataloader if args.test else trainer.val_dataloader,
-            is_test=args.test,
+            trainer.test_dataloader if test else trainer.val_dataloader,
+            is_test=test,
         )
 
         # Get embeddings and labels
-        if args.test:
+        if test:
             embeddings = trainer.test_embeddings
             labels = trainer.test_labels
             dataset_name = "test"
@@ -149,7 +141,7 @@ def main():
         visualizer = EmbeddingVisualizer(config)
 
         # Parse visualization methods
-        methods = args.vis_methods.split(",")
+        methods = vis_methods.split(",")
 
         # Generate visualizations
         save_dir = vis_dir / dataset_name
